@@ -6,11 +6,16 @@
 
 package edu.eci.arsw.math;
 
+import org.junit.Before;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 /**
  *
  * @author hcadavid
  */
-/**
+
 public class PiCalcTest {
 
     public PiCalcTest() {
@@ -41,7 +46,6 @@ public class PiCalcTest {
                 assertEquals(count, digits.length);
 
                 for (int i = 0; i < digits.length; i++) {
-                    System.out.println(digits[i]);
                     assertEquals(expected[start + i], digits[i]);
                 }
             }
@@ -49,4 +53,3 @@ public class PiCalcTest {
     }
 
 }
-*/
