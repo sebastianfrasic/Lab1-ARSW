@@ -1,25 +1,52 @@
 package edu.eci.arsw.math;
 
-public class PiDigitsThread extends Thread{
+public class PiDigitsThread extends Thread {
     private int start;
     private int count;
-    private byte[] digits;
+    private byte[] digitsInHex;
 
-    public PiDigitsThread(int start,int count){
+    public PiDigitsThread(int start, int count) {
         this.start = start;
         this.count = count;
-        digits = new byte[this.count];
+        digitsInHex = new byte[this.count];
     }
 
     @Override
-    public void run(){
-        digits = PiDigits.getDigits(start,count);
+    public void run() {
+        long ini = System.currentTimeMillis();
+        System.out.println("Nuevo hilo empezando:");
+        System.out.println(this.start + " " + this.count);
+
+        this.digitsInHex = PiDigits.getDigits(start, count);
+
+        long fin = System.currentTimeMillis();
+        System.out.println("Tiempo total del hilo: " + (fin - ini) + " milisegundo(s).\n");
     }
 
-    public byte[] getDigits(){
-        return digits;
+
+    public int getStart() {
+        return start;
     }
 
+    public void setStart(int start) {
+        this.start = start;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public byte[] getDigitsInHex() {
+        return digitsInHex;
+    }
+
+    public void setDigitsInHex(byte[] digitsInHex) {
+        this.digitsInHex = digitsInHex;
+    }
 }
 
 
