@@ -12,12 +12,13 @@ package edu.eci.arsw.math;
 public class Main {
 
 
-    public static void main(String a[]) {
+    public static void main(String a[]) throws InterruptedException {
         System.out.println(bytesToHex(PiDigits.getDigits(0, 10)));
         System.out.println(bytesToHex(PiDigits.getDigits(1, 100)));
         System.out.println(bytesToHex(PiDigits.getDigits(1, 1000000)));
 
-
+        System.out.println(bytesToHex(PiDigits.particion(1,6,1)));
+        System.out.println("termine");
 
     }
 

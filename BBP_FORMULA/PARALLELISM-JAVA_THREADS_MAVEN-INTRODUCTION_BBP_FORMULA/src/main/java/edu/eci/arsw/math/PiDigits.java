@@ -1,8 +1,5 @@
 package edu.eci.arsw.math;
 
-import java.util.ArrayList;
-import java.util.List;
-
 ///  <summary>
 ///  An implementation of the Bailey-Borwein-Plouffe formula for calculating hexadecimal
 ///  digits of pi.
@@ -13,10 +10,7 @@ public class PiDigits{
 
     private static int DigitsPerSum = 8;
     private static double Epsilon = 1e-17;
-
-    private ArrayList<byte[]> listaThread;
-
-
+    private static byte[] digits;
 
 
     /**
@@ -26,9 +20,6 @@ public class PiDigits{
      * @return An array containing the hexadecimal digits.
      */
     public static byte[] getDigits(int start, int count) {
-
-        particion(1,6,3);
-
         if (start < 0) {
             throw new RuntimeException("Invalid Interval");
         }
@@ -127,8 +118,9 @@ public class PiDigits{
 
 
 
-    public static void particion(int start, int count, int N){
-
+    public static byte[] particion(int start, int count, int N){
+        digits = new byte[count];
+        //System.out.println("entre");
         if (N > count || N < 1){
             throw new RuntimeException("Invalid number of threads");
         }
@@ -136,16 +128,36 @@ public class PiDigits{
         int tamaño = (count+start)/N;
         int v1 = start;
         int v2 = tamaño;
-        System.out.println(tamaño);
         for(int i=0;i<N;i++){
             if(i==(N-1)){
                 v2+=((count+start)%N);
             }
-            //listaThread.add(getDigits(v1,v2));
-            System.out.println(v1+" "+v2+" "+tamaño);
+            PiDigitsThread thread = new PiDigitsThread(v1,v2);
+            thread.start();
+            //thread.join();
+            try {
+                thread.join();
+            }catch (InterruptedException e){
+                e.printStackTrace();
+            }
+
+            saveDigits(thread.getDigits());
             v1+=tamaño;
             v2+=tamaño;
         }
+        viewDigits();
+        return digits;
     }
 
+    private static void saveDigits(byte[] dig){
+        for(int i=0;i<dig.length;i++){
+            digits[i] = dig[i];
+        }
+    }
+
+    public static void viewDigits(){
+        for(int i=0;i<digits.length;i++){
+            System.out.println(digits[i]);
+        }
+    }
 }
