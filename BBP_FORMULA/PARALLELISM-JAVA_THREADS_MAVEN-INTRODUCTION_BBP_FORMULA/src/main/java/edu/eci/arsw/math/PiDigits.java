@@ -64,11 +64,11 @@ public class PiDigits {
         for (int i = 0; i < numeroDeHilos; i++) {
 
             int numeroDeDigitosPorHilo;
-            if (i != numeroDeHilos - 1) {
-                numeroDeDigitosPorHilo = subsecuencia;
-            } else {
+            if (i == (numeroDeHilos - 1)) {
                 int parteSobrante = count % numeroDeHilos;
                 numeroDeDigitosPorHilo = subsecuencia + parteSobrante;
+            } else {
+                numeroDeDigitosPorHilo = subsecuencia;
             }
             hilos[i] = new PiDigitsThread(start, numeroDeDigitosPorHilo);
             hilos[i].start();

@@ -15,7 +15,7 @@ public class PiDigitsThread extends Thread {
     public void run() {
         long ini = System.currentTimeMillis();
         System.out.println("Nuevo hilo empezando:");
-        System.out.println(this.start + " " + this.count);
+        System.out.println("Start: " + this.start + ", Count: " + this.count);
 
         this.digitsInHex = PiDigits.getDigits(start, count);
 
