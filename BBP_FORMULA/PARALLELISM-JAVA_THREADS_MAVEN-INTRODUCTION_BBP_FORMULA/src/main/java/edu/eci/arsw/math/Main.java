@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package edu.eci.arsw.math;
-
 /**
  * @author hcadavid
  */
@@ -15,17 +14,23 @@ public class Main {
 
         System.out.println("Con un solo hilo: ");
         long iniUnHilo = System.currentTimeMillis();
-        System.out.println(bytesToHex(PiDigits.getDigits(2, 3000)));
+        System.out.println(bytesToHex(PiDigits.getDigits(2, 300000)));
         long finUnHilo = System.currentTimeMillis();
         System.out.println("Con un hilo el programa se tardó: " + (finUnHilo - iniUnHilo) + " milisegundos. \n");
 
 
-        int numeroDeHilos = 3;
+        int numeroDeHilos = 500;
         System.out.println("Con " + numeroDeHilos + " hilos: \n");
         long ini = System.currentTimeMillis();
-        System.out.println(bytesToHex(PiDigits.getDigits(2, 3000, numeroDeHilos)));
+        System.out.println(bytesToHex(PiDigits.getDigits(2, 3000000, numeroDeHilos)));
         long fin = System.currentTimeMillis();
         System.out.println("Con " + numeroDeHilos + " hilos el programa se tardó: " + (fin - ini) + " milisegundos.");
+
+
+
+        Runtime r = Runtime.getRuntime();
+        System.out.println(r.availableProcessors());
+
 
 
     }
