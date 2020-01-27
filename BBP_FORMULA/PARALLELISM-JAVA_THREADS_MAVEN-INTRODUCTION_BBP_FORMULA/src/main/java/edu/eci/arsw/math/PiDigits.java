@@ -150,7 +150,7 @@ public class PiDigits {
         if (start < 0) {
             throw new RuntimeException("Invalid Interval");
         }
-        if (count <= 0) {
+        if (count < 0) {
             throw new RuntimeException("Invalid Interval");
         }
     }
