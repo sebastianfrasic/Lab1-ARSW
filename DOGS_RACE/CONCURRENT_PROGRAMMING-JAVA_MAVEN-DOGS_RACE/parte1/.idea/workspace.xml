@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed251c2e-5432-4235-9c04-af59bcf3c01f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../parte2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../parte2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../parte2/src/main/java/arsw/threads/Galgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../parte2/src/main/java/arsw/threads/Galgo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../parte2/src/main/java/arsw/threads/MainCanodromo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../parte2/src/main/java/arsw/threads/MainCanodromo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../parte2/src/main/java/arsw/threads/RegistroLlegada.java" beforeDir="false" afterPath="$PROJECT_DIR$/../parte2/src/main/java/arsw/threads/RegistroLlegada.java" afterDir="false" />
@@ -109,6 +110,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../parte2" />
   </component>
   <component name="RunDashboard">

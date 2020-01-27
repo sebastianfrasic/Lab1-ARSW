@@ -27,13 +27,13 @@ public class Galgo extends Thread {
 
             if (paso == carril.size()) {
                 carril.finish();
-                AtomicInteger ubicacion = regl.getUltimaPosicionAlcanzada();
-
-                int nuevaPosicionDeLlegada = ubicacion.getAndAdd(1);
-                regl.setUltimaPosicionAlcanzada(new AtomicInteger(nuevaPosicionDeLlegada));
+                //AtomicInteger ubicacion = regl.getUltimaPosicionAlcanzada();
+                //int nuevaPosicionDeLlegada = ubicacion.getAndAdd(1);
+                //int nuevaPosicionDeLlegada = ubicacion.getAndIncrement();
+                int ubicacion = regl.incrementoRegistroLlegada();
 
                 System.out.println("El galgo " + this.getName() + " llego en la posicion " + ubicacion);
-                if (ubicacion.equals(1)) {
+                if (ubicacion==1) {
                     regl.setGanador(this.getName());
                 }
 

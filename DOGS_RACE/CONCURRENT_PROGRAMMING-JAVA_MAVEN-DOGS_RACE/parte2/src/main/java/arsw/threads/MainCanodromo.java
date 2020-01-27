@@ -48,7 +48,8 @@ public class MainCanodromo {
                                 }
 
                                 //can.winnerDialog(reg.getGanador(), reg.getUltimaPosicionAlcanzada() - 1);
-                                can.winnerDialog(reg.getGanador(), reg.getUltimaPosicionAlcanzada().getAndAdd(-1));
+                                //can.winnerDialog(reg.getGanador(), reg.getUltimaPosicionAlcanzada().getAndAdd(-1));
+                                can.winnerDialog(reg.getGanador(), reg.getUltimaPosicionAlcanzada().intValue()-1);
                                 System.out.println("El ganador fue:" + reg.getGanador());
                             }
                         }.start();

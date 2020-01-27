@@ -24,6 +24,10 @@ public class RegistroLlegada {
 		this.ultimaPosicionAlcanzada = ultimaPosicionAlcanzada;
 	}
 
+	public int incrementoRegistroLlegada() {
+		return ultimaPosicionAlcanzada.getAndIncrement();
+	}
+
 	
 	
 }
