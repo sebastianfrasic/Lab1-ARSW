@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2338ff07-254d-4c33-b633-ee234f6f9f87" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../../BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/PiDigits.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/PiDigits.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/src/main/java/edu/eci/arsw/math/PiDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/src/main/java/edu/eci/arsw/math/PiDigits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/src/test/java/edu/eci/arsw/math/PiCalcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/src/test/java/edu/eci/arsw/math/PiCalcTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../parte1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../parte1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parte1/src/main/java/edu/eci/arsw/primefinder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../parte1/src/main/java/edu/eci/arsw/primefinder/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parte1/src/main/java/edu/eci/arsw/primefinder/PrimeFinderThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../parte1/src/main/java/edu/eci/arsw/primefinder/PrimeFinderThread.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,23 +24,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/arsw/threads/MainCanodromo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+            <state relative-caret-position="1377">
+              <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
               <folding>
                 <element signature="e#533#2033#0" expanded="true" />
                 <element signature="e#1061#1948#0" expanded="true" />
                 <element signature="e#1947#1948#0" expanded="true" />
                 <element signature="e#2032#2033#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/awt/event/ActionListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -72,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/arsw/threads/Galgo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-37">
-              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -318,13 +307,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/awt/event/ActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/arsw/threads/RandomGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -354,7 +336,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/arsw/threads/Galgo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-37">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -368,10 +350,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/awt/event/ActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="49" column="47" lean-forward="true" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/arsw/threads/MainCanodromo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        <state relative-caret-position="1377">
+          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
           <folding>
             <element signature="e#533#2033#0" expanded="true" />
             <element signature="e#1061#1948#0" expanded="true" />

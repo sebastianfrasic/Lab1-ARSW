@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27b8a68f-0f89-4544-af48-ac94ae4b02af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PiDigits.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PiDigits.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/eci/arsw/math/PiCalcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/eci/arsw/math/PiCalcTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/parte1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/parte1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/parte1/src/main/java/edu/eci/arsw/primefinder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/parte1/src/main/java/edu/eci/arsw/primefinder/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/parte1/src/main/java/edu/eci/arsw/primefinder/PrimeFinderThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/parte1/src/main/java/edu/eci/arsw/primefinder/PrimeFinderThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/parte2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/parte2/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -28,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/eci/arsw/math/PiCalcTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+            <state relative-caret-position="-391">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="e#0#2964#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -41,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/eci/arsw/math/PiDigits.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="153" selection-start-line="153" selection-end-line="153" />
+            <state relative-caret-position="347">
+              <caret line="152" column="19" selection-start-line="152" selection-start-column="19" selection-end-line="152" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -73,6 +71,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/edu/eci/arsw/math/PiCalcTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/eci/arsw/math/PiDigits.java" />
       </list>
     </option>
   </component>
@@ -257,15 +256,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PiCalcTest_piGenTest - 2020.01.25 at 09h 28m 59s.xml">
-      <configuration name="PiCalcTest.piGenTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PiCalcTest_deberianSerIguales - 2020.01.25 at 09h 29m 07s.xml">
-      <configuration name="PiCalcTest.deberianSerIguales" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PiCalcTest - 2020.01.27 at 17h 42m 36s.xml">
-      <configuration name="PiCalcTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PiCalcTest_deberianSerIguales - 2020.01.27 at 17h 44m 08s.xml">
       <configuration name="PiCalcTest.deberianSerIguales" configurationId="JUnit" />
     </history-entry>
@@ -280,6 +270,21 @@
     </history-entry>
     <history-entry file="PiCalcTest_startCorrecto - 2020.01.27 at 17h 50m 21s.xml">
       <configuration name="PiCalcTest.startCorrecto" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PiCalcTest_countCorrecto - 2020.01.27 at 17h 53m 07s.xml">
+      <configuration name="PiCalcTest.countCorrecto" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PiCalcTest - 2020.01.27 at 17h 53m 17s.xml">
+      <configuration name="PiCalcTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PiCalcTest - 2020.01.27 at 17h 53m 40s.xml">
+      <configuration name="PiCalcTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PiCalcTest - 2020.01.27 at 17h 54m 11s.xml">
+      <configuration name="PiCalcTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PiCalcTest - 2020.01.27 at 17h 55m 23s.xml">
+      <configuration name="PiCalcTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -386,15 +391,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/eci/arsw/math/PiDigits.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="153" selection-start-line="153" selection-end-line="153" />
+        <state relative-caret-position="347">
+          <caret line="152" column="19" selection-start-line="152" selection-start-column="19" selection-end-line="152" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/eci/arsw/math/PiCalcTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+        <state relative-caret-position="-391">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="e#0#2964#0" expanded="true" />
             <element signature="imports" expanded="true" />
