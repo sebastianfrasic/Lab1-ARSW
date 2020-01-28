@@ -53,7 +53,7 @@ With the above, and with the execution times given, graph solution time vs. Numb
 ### Part I
 
 *   Para compilar:
-```mvn test```
+```mvn package```
 
 *   Para ejecutar:
 
@@ -62,7 +62,6 @@ With the above, and with the execution times given, graph solution time vs. Numb
 *   Creation, commissioning and coordination of threads.
 1.  Review the "concurrent cousins" program (in the folder part1), provided in the package edu.eci.arsw.primefinder. This is a program that calculates the prime numbers between two intervals, distributing their search among independent threads. For now, it has a single thread that seeks cousins ​​between 0 and 30,000,000. Run it, open the operating system process manager, and verify how many cores are used by it.
 
-```Aun no sabemos como verify how many cores are used by it```
 
 2.  Modify the program so that, instead of solving the problem with a single thread, do it with three, where each of these will make up the first part of the original problem. Check the operation again, and again check the use of the equipment cores.
 
@@ -85,15 +84,21 @@ When starting the application, there is a first obvious error: the results (tota
 
 ### Part III
 
+*   Para compilar:
+```mvn package```
+
+*   Para ejecutar:
+```mvn exec:java -Dexec.mainClass="edu.eci.arsw.threads.MainCanodromo"```
+
 1.  Fix the application so that the results notice is shown only when the execution of all the ‘greyhound’ threads is finished. For this keep in mind:
     *   The action of starting the race and showing the results is carried out from line 38 of MainCanodromo.
     *   The join() method of the Thread class can be used to synchronize the thread that starts the race, with the completion of the greyhound threads.
 2.  Once the initial problem has been corrected, run the application several times, and identify the inconsistencies in the results of the same by seeing the ‘ranking’ shown on the console (sometimes valid results could appear, but in other cases such inconsistencies may occur). From this, identify the critical regions of the program.
-```The critical region of the program is RegistroLlegada.ultimaPosicionAlcanzada ```
+    ```The critical region of the program is RegistroLlegada.ultimaPosicionAlcanzada ```
 
 3. Use a synchronization mechanism to ensure that these critical regions only access one thread at a time. Verify the results.
 
 4.  Implement the pause and continue functionalities. With these, when "Stop" is clicked, all the threads of the greyhounds should fall asleep, and when "Continue" is clicked they should wake up and continue with the race. Design a solution that allows you to do this using the synchronization mechanisms with the Locks primitives provided by the language (wait and notifyAll).
 
-```These methods are in class Galgo.java and they are called pausar() and reanudar()  ```
+    ```These methods are in class Galgo.java and they are called pausar() and reanudar()  ```
 
