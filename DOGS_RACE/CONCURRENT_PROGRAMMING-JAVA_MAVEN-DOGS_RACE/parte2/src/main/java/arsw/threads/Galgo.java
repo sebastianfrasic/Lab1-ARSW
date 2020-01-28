@@ -11,6 +11,7 @@ public class Galgo extends Thread {
     private int paso;
     private Carril carril;
     RegistroLlegada regl;
+    private boolean estaEnPausa;
 
     public Galgo(Carril carril, String name, RegistroLlegada reg) {
         super(name);
@@ -32,11 +33,16 @@ public class Galgo extends Thread {
                 //int nuevaPosicionDeLlegada = ubicacion.getAndIncrement();
                 int ubicacion = regl.incrementoRegistroLlegada();
 
-                System.out.println("El galgo " + this.getName() + " llego en la posicion " + ubicacion);
-                if (ubicacion==1) {
+                System.out.println("El galgo #" + this.getName() + " llegó en la posición " + ubicacion);
+                if (ubicacion == 1) {
                     regl.setGanador(this.getName());
                 }
+            }
 
+            synchronized (this) {
+                while (this.estaEnPausa) {
+                    wait();
+                }
             }
         }
     }
@@ -51,6 +57,16 @@ public class Galgo extends Thread {
             e.printStackTrace();
         }
 
+    }
+
+    public synchronized void pausar() {
+        this.estaEnPausa = true;
+        notifyAll();
+    }
+
+    public synchronized void reanudar() {
+        this.estaEnPausa = false;
+        notifyAll();
     }
 
 }

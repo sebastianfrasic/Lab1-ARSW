@@ -27,7 +27,7 @@ public class Main {
             last += 10000000;
         }
         timer.start();
-        for(int i=0;i<3;i++){
+        for (int i = 0; i < 3; i++) {
             try {
                 listaDeHilos[i].join();
             } catch (InterruptedException e) {
@@ -51,7 +51,7 @@ public class Main {
     }
 
     private static void leerEnter() {
-        System.out.println("Presione Enter paraver más resultados");
+        System.out.println("Presione Enter para ver más resultados");
         Scanner t = new Scanner(System.in);
         String enterkey = t.nextLine();
         if (enterkey.isEmpty()) {
@@ -64,8 +64,6 @@ public class Main {
             listaDeHilos[i].resume();
         }
     }
-
-
 
 
 }

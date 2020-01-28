@@ -4,30 +4,29 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class RegistroLlegada {
 
-	private AtomicInteger ultimaPosicionAlcanzada= new AtomicInteger(1);
+    private AtomicInteger ultimaPosicionAlcanzada = new AtomicInteger(1);
 
-	private String ganador=null;
-	
-	public String getGanador() {
-		return ganador;
-	}
+    private String ganador = null;
 
-	public void setGanador(String ganador) {
-		this.ganador = ganador;
-	}
+    public String getGanador() {
+        return ganador;
+    }
 
-	public AtomicInteger getUltimaPosicionAlcanzada() {
-		return ultimaPosicionAlcanzada;
-	}
+    public void setGanador(String ganador) {
+        this.ganador = ganador;
+    }
 
-	public void setUltimaPosicionAlcanzada(AtomicInteger ultimaPosicionAlcanzada) {
-		this.ultimaPosicionAlcanzada = ultimaPosicionAlcanzada;
-	}
+    public AtomicInteger getUltimaPosicionAlcanzada() {
+        return ultimaPosicionAlcanzada;
+    }
 
-	public int incrementoRegistroLlegada() {
-		return ultimaPosicionAlcanzada.getAndIncrement();
-	}
+    public void setUltimaPosicionAlcanzada(AtomicInteger ultimaPosicionAlcanzada) {
+        this.ultimaPosicionAlcanzada = ultimaPosicionAlcanzada;
+    }
 
-	
-	
+    public int incrementoRegistroLlegada() {
+        return ultimaPosicionAlcanzada.getAndIncrement();
+    }
+
+
 }
