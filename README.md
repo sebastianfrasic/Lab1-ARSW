@@ -16,6 +16,13 @@
     *   Run and check the output on screen. 
     *   Change the beginning with start() to run(). How does the output change? Why?
 	
+*   Para compilar:
+```mvn package```
+
+*   Para ejecutar:
+
+```mvn exec:java -Dexec.mainClass="edu.eci.arsw.primefinder.Main"```
+
 Cuando llamamos al método run() del thread, se ejecuta todo el fragmento de código que hay en este. Como lo llamamos con diferentes intervalos, se 
 observa que el imprime los números entre A y B secuencialmente, es decir, de menor a mayor empezando con el intervalo A.
 
@@ -55,20 +62,20 @@ When starting the program, run the jVisualVM monitor, and as the tests run, chec
 
 * Con número de hilos igual al doble  número de procesadores(8) – 100000 digitos
 
-![pa1.3](https://github.com/sebastianfrasic/Lab1-ARSW/blob/master/DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/img/media/ochoHilos.png)
+![pa1.3](https://github.com/sebastianfrasic/Lab1-ARSW/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/ochoHilos.png)
 
 * Con Numero de hilos igual a 200 – 100000 dígitos
 
-![pa1.4](https://github.com/sebastianfrasic/Lab1-ARSW/blob/master/DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/img/media/200Hilos.png)
+![pa1.4](https://github.com/sebastianfrasic/Lab1-ARSW/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/200Hilos.png)
 
 * Con Numero de hilos igual a 500 – 100000 dígitos
 
-![pa1.5](https://github.com/sebastianfrasic/Lab1-ARSW/blob/master/DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/img/media/500Hilos.png)
+![pa1.5](https://github.com/sebastianfrasic/Lab1-ARSW/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/500Hilos.png)
 
 
 With the above, and with the execution times given, graph solution time vs. Number of threads. Analyze and propose hypotheses with your partner for the following questions (you can take into account what is reported by jVisualVM):
 
-![pa1.6](https://github.com/sebastianfrasic/Lab1-ARSW/blob/master/DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/img/media/grafica.png)
+![pa1.6](https://github.com/sebastianfrasic/Lab1-ARSW/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/grafica.png)
 
 1. According to Amdahls law, where S (n) is the theoretical performance improvement, P the parallel fraction of the algorithm, and n the number of threads, the greater n, the greater the improvement should be. Why is the best performance not achieved with the 500 threads? How does this performance compare when 200 are used?.  
 
