@@ -55,7 +55,7 @@ public class PiDigits {
     public static byte[] getDigits(int start, int count, int numeroDeHilos) throws InterruptedException {
         verificarIntervalos(start, count);
         if (numeroDeHilos <= 0) {
-            throw new RuntimeException("Invalid number of threads.");
+            throw new RuntimeException("Invalid number of threads");
         }
         byte[] listaDeDigitosFinal = new byte[count];
         PiDigitsThread[] hilos = new PiDigitsThread[numeroDeHilos];
@@ -82,13 +82,6 @@ public class PiDigits {
         return listaDeDigitosFinal;
     }
 
-
-    /// <summary>
-    /// Returns the sum of 16^(n - k)/(8 * k + m) from 0 to k.
-    /// </summary>
-    /// <param name="m"></param>
-    /// <param name="n"></param>
-    /// <returns></returns>
     private static double sum(int m, int n) {
         double sum = 0;
         int d = m;
@@ -114,12 +107,6 @@ public class PiDigits {
         return sum;
     }
 
-    /// <summary>
-    /// Return 16^p mod m.
-    /// </summary>
-    /// <param name="p"></param>
-    /// <param name="m"></param>
-    /// <returns></returns>
     private static int hexExponentModulo(int p, int m) {
         int power = 1;
         while (power * 2 <= p) {

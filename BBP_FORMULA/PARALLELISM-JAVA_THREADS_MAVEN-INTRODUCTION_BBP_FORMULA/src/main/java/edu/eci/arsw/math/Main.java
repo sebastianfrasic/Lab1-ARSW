@@ -11,29 +11,15 @@ public class Main {
 
 
     public static void main(String a[]) throws InterruptedException {
-
-        //System.out.println("Con un solo hilo: ");
-
-        /**
-        long iniUnHilo = System.currentTimeMillis();
-        System.out.println(bytesToHex(PiDigits.getDigits(0, 100000)));
-        long finUnHilo = System.currentTimeMillis();
-        System.out.println("Con un hilo el programa se tardó: " + (finUnHilo - iniUnHilo) + " milisegundos. \n");
-        */
-
-        int numeroDeHilos = 200;
+        int numeroDeHilos = 1;
         System.out.println("Con " + numeroDeHilos + " hilos: \n");
         long ini = System.currentTimeMillis();
-        System.out.println(bytesToHex(PiDigits.getDigits(0, 100000, numeroDeHilos)));
+        System.out.println(bytesToHex(PiDigits.getDigits(1, 100, numeroDeHilos)));
         long fin = System.currentTimeMillis();
         System.out.println("Con " + numeroDeHilos + " hilos el programa se tardó: " + (fin - ini) + " milisegundos.");
 
-
-
-        Runtime r = Runtime.getRuntime();
-        System.out.println(r.availableProcessors());
-
-
+        //Runtime r = Runtime.getRuntime();
+        //System.out.println(r.availableProcessors());
 
     }
 

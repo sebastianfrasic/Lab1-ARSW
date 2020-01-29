@@ -53,17 +53,32 @@ public class PiCalcTest {
     }
 
     @Test
-    public void deberianSerIguales() throws InterruptedException {
-        try {
-            String cadena1 = Main.bytesToHex(PiDigits.getDigits(2, 100));
-            String cadena2 = Main.bytesToHex(PiDigits.getDigits(2, 100, 4));
+    public void numeroParDeHilos() throws InterruptedException {
+        String cadena1 = Main.bytesToHex(PiDigits.getDigits(2, 100));
+        String cadena2 = Main.bytesToHex(PiDigits.getDigits(2, 100, 4));
+        assertEquals(cadena1,cadena2);
 
-            assertEquals(cadena1, cadena2);
-        } catch (RuntimeException e) {
-            e.printStackTrace();
-        }
+        String cadena3 = Main.bytesToHex(PiDigits.getDigits(0, 1000));
+        String cadena4 = Main.bytesToHex(PiDigits.getDigits(0, 1000, 8));
+        assertEquals(cadena3,cadena4);
 
+        String cadena5 = Main.bytesToHex(PiDigits.getDigits(0, 350));
+        String cadena6 = Main.bytesToHex(PiDigits.getDigits(0, 350, 18));
+        assertEquals(cadena5,cadena6);
+    }
 
+    public void numeroImparDeHilos() throws InterruptedException{
+        String cadena1 = Main.bytesToHex(PiDigits.getDigits(1, 100));
+        String cadena2 = Main.bytesToHex(PiDigits.getDigits(2, 100, 5));
+        assertEquals(cadena1,cadena2);
+
+        String cadena3 = Main.bytesToHex(PiDigits.getDigits(10, 10000));
+        String cadena4 = Main.bytesToHex(PiDigits.getDigits(10, 10000, 25));
+        assertEquals(cadena3,cadena4);
+
+        String cadena5 = Main.bytesToHex(PiDigits.getDigits(20, 1200));
+        String cadena6 = Main.bytesToHex(PiDigits.getDigits(20, 1200, 13));
+        assertEquals(cadena3,cadena4);
     }
 
     @Test
@@ -80,20 +95,37 @@ public class PiCalcTest {
 
     }
 
-//    @Test
-//    public void countCorrecto() throws InterruptedException {
-//        assertEquals(Main.bytesToHex(PiDigits.getDigits(10,1,2)),"A");
-//        assertEquals(Main.bytesToHex(PiDigits.getDigits(100,0,2)),"Invalid Interval");
-//        assertEquals(Main.bytesToHex(PiDigits.getDigits(1,-1,2)),"Invalid Interval");
-//
-//    }
+    @Test
+    public void countCorrecto() throws InterruptedException {
+        assertEquals(Main.bytesToHex(PiDigits.getDigits(10,1,2)),"A");
+        assertEquals(Main.bytesToHex(PiDigits.getDigits(100,0,2)),"");
 
-//    @Test
-//    public void numeroHilosCorrectos() throws InterruptedException{
-//        String valor = "A308D313198A2E03707344A4093822299F31D0082EFA98EC4E6C89452821E638D01377BE5466CF34E90C6CC0AC29B7C97C50";
-//        assertEquals(Main.bytesToHex(PiDigits.getDigits(1,100,1)),valor);
-//        assertEquals(Main.bytesToHex(PiDigits.getDigits(2,1000,0)),"Invalid number of threads.");
-//        assertEquals(Main.bytesToHex(PiDigits.getDigits(1,1500,-1)),"Invalid number of threads.");
-//    }
+        try{
+            Main.bytesToHex(PiDigits.getDigits(1,-1,2));
+            fail("Debería tener un Intervalo Invalido");
+        }catch (RuntimeException e){
+            assertEquals(e.getMessage(),"Invalid Interval");
+        }
+    }
+
+    @Test
+    public void numeroHilosCorrectos() throws InterruptedException{
+        String valor = "43F6A8885A308D313198A2E03707344A4093822299F31D0082EFA98EC4E6C89452821E638D01377BE5466CF34E90C6CC0AC2";
+        assertEquals(Main.bytesToHex(PiDigits.getDigits(1,100,1)),valor);
+
+        try{
+            Main.bytesToHex(PiDigits.getDigits(2,1000,0));
+            fail("Debería tener un Número de Threads Inválido");
+        }catch (RuntimeException e){
+            assertEquals(e.getMessage(),"Invalid number of threads");
+        }
+
+        try{
+            Main.bytesToHex(PiDigits.getDigits(1,1500,-1));
+            fail("Debería tener un Número de Threads Inválido");
+        }catch (RuntimeException e){
+            assertEquals(e.getMessage(),"Invalid number of threads");
+        }
+    }
 
 }
