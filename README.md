@@ -75,7 +75,7 @@ When starting the program, run the jVisualVM monitor, and as the tests run, chec
 
 With the above, and with the execution times given, graph solution time vs. Number of threads. Analyze and propose hypotheses with your partner for the following questions (you can take into account what is reported by jVisualVM):
 
-![pa1.6](https://github.com/sebastianfrasic/Lab1-ARSW/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/grafica.png)
+![pa1.6](https://github.com/sebastianfrasic/Lab1-ARSW/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/grafica.PNG)
 
 1. According to Amdahls law, where S (n) is the theoretical performance improvement, P the parallel fraction of the algorithm, and n the number of threads, the greater n, the greater the improvement should be. Why is the best performance not achieved with the 500 threads? How does this performance compare when 200 are used?.  
 
