@@ -47,7 +47,7 @@ When starting the program, run the jVisualVM monitor, and as the tests run, chec
 
 * Con un hilo – 100000 digitos
 
-![pa1.1](https://github.com/sebastianfrasic/Lab1-ARSW/blob/master/DOGS_RACE/CONCURRENT_PROGRAMMING-JAVA_MAVEN-DOGS_RACE/img/media/unHilo.png)
+![pa1.1](https://github.com/sebastianfrasic/Lab1-ARSW/blob/master/BBP_FORMULA/PARALLELISM-JAVA_THREADS_MAVEN-INTRODUCTION_BBP_FORMULA/img/unHilo.png)
 
 * Con número de hilos igual a número de procesadores(4) – 100000 digitos
 
