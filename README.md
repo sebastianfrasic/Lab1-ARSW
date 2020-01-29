@@ -19,10 +19,6 @@
 *   Para compilar:
 ```mvn package```
 
-*   Para ejecutar:
-
-```mvn exec:java -Dexec.mainClass="edu.eci.arsw.primefinder.Main"```
-
 Cuando llamamos al método run() del thread, se ejecuta todo el fragmento de código que hay en este. Como lo llamamos con diferentes intervalos, se 
 observa que el imprime los números entre A y B secuencialmente, es decir, de menor a mayor empezando con el intervalo A.
 
